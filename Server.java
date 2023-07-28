@@ -24,10 +24,11 @@ import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import static com.example.demo.MemCons.rooms;
-//slf4j.Logger 로그 메시지를 기록하는 데 사용되는 Logger객체 초기화
+//WebSocket 요청을 처리할 수 있는 클래스를 지정
 @ServerEndpoint("/ws/{userId}/{device}")
 @Component
 public class WebSocketServer {
+    //slf4j.Logger 로그 메시지를 기록하는 데 사용되는 Logger객체 초기화
     private static final Logger LOG = LoggerFactory.getLogger(WebSocketServer.class);
 
     private String userId;
