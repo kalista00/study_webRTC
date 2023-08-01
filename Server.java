@@ -35,7 +35,7 @@ public class WebSocketServer {
     private static Gson gson = new Gson();
     private static String avatar = "p1.jpeg";
 
-    // 사용자 userId가 로그인될 때 호출됨!
+    // 사용자 userId가 로그인될 때 호출됨(클라이언트가 접속할때)
     @OnOpen
     public void onOpen(Session session, @PathParam("userId") String userId, @PathParam("device") String de) {
         int device = Integer.parseInt(de);
