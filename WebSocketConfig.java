@@ -9,6 +9,8 @@ import org.springframework.web.socket.server.standard.ServerEndpointExporter;
 /**
  * WebSocket 지원을 위한 설정 클래스. WebSocket을 구성하고 활성화합니다.
  */
+
+//WebMvcConfigurationSupport클래스를 상속받음
 @Configuration
 public class WebSocketConfig extends WebMvcConfigurationSupport {
     @Bean
